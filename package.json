@@ -1,0 +1,27 @@
+{
+  "name": "bikeShop-cb",
+  "version": "0.0.1",
+  "description": "Sample Application for Couchbase, Node.js, Ottoman, and Express",
+  "homepage": "http://www.couchbase.com",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ToddGreenstein/bikeshop-cb"
+  },
+  "license": "Apache2",
+  "author": {
+    "name": "Todd Greenstein",
+    "email": "todd@couchbase.com"
+  },
+  "dependencies": {
+    "express": "*",
+    "couchbase": "*",
+    "body-parser": "*",
+    "ottoman":"git+https://github.com/couchbaselabs/node-ottoman.git#refactor"
+  },
+  "contributors": [
+    {
+      "name": "Todd Greenstein",
+      "email": "todd@couchbase.com"
+    }
+  ]
+}
