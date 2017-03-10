@@ -5,7 +5,8 @@ var ottoman=require('ottoman');
 // Build my cluster object and open a new cluster
 var myCluster = new couchbase.Cluster('localhost:8091');
 var myBucket = myCluster.openBucket('bikeShop');
-ottoman.bucket=myBucket;
+ottoman.store = new ottoman.CbStoreAdapter(myBucket, couchbase);
+//ottoman.bucket=myBucket;
 
 // Build my "schema" from my model files
 require('./model/employee');
