@@ -14,9 +14,9 @@
   },
   "dependencies": {
     "express": "*",
-    "couchbase": "*",
+    "couchbase": "~2.3.0",
     "body-parser": "*",
-    "ottoman":"git+https://github.com/couchbaselabs/node-ottoman.git#refactor"
+    "ottoman":"~1.0.2"
   },
   "contributors": [
     {
