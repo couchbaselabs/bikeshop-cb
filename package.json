@@ -7,16 +7,24 @@
     "type": "git",
     "url": "git://github.com/ToddGreenstein/bikeshop-cb"
   },
+  "scripts": {
+    "dev": "nodemon app.js",
+    "start": "node app.js"
+  },
   "license": "Apache2",
   "author": {
     "name": "Todd Greenstein",
     "email": "todd@couchbase.com"
   },
   "dependencies": {
-    "express": "*",
-    "couchbase": "~2.3.0",
     "body-parser": "*",
-    "ottoman":"~1.0.2"
+    "couchbase": "~2.6.10",
+    "dotenv": "^8.2.0",
+    "express": "*",
+    "ottoman": "~1.0.6"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
   },
   "contributors": [
     {
