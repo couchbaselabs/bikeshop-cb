@@ -26,7 +26,7 @@ docker-compose up
 
 **Step - 5** : Add new user named *bikeShop* with role **Application Access**.
 
-[Add User](.screenshots/add-user.png)
+![Add User](.screenshots/add-user.png)
 
 **Step - 6** : Create `.env` file with password the user *bikeShop*.
 
