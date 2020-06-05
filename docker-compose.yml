@@ -1,0 +1,24 @@
+version: "3"
+
+volumes:
+  local_couchbase_data: {}
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: ./compose/app/Dockerfile
+    depends_on:
+      - db
+    ports:
+      - "3000:3000"
+    volumes: 
+      - .:/usr/src
+      - /usr/src/node_modules
+  db:
+    image: couchbase
+    ports:
+      - "8091-8094:8091-8094"
+      - "11210:11210"
+    volumes: 
+      - local_couchbase_data:/opt/couchbase/var/lib/couchbase
